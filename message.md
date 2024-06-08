@@ -24,7 +24,7 @@
 2. **Verificación y certificación:** Implementar un sistema de verificación y certificación para asegurar calidad y confianza en los proveedores.
 3. **Sistema de reseñas y calificaciones:** Permitir a los usuarios dejar reseñas y calificaciones para fomentar la transparencia.
 4. **Integración de pagos seguros:** Ofrecer opciones de pago seguras y diversas para facilitar las transacciones.
-5. **Gestión de citas:** Incluir funciones para agendar, modificar y recordar citas.
+5. **Gestión de citas:** Incluir funciones para agendar, y recordar citas.
 
 ## Alcance de la Solución
 
@@ -39,12 +39,12 @@
 
 ### Sistema de búsqueda
 
-Motor de búsqueda para encontrar servicios específicos basados en ubicación, tipo de
-servicio y calificaciones.
+Motor de búsqueda para encontrar servicios específicos basados en nombre y
+calificaciones.
 
 ### Sistema de reservas
 
-Herramienta para agendar, modificar y cancelar servicios.
+Herramienta para agendar y cancelar servicios.
 
 ### Sistema de pagos
 
@@ -144,7 +144,7 @@ un mensaje informando al usuario y sugiere opciones cercanas o similares.
 
 ## Sistema de Reservas
 
-- Resumen: Permitir a los usuarios agendar, modificar y cancelar citas con los proveedores.
+- Resumen: Permitir a los usuarios agendar y cancelar citas con los proveedores.
 - Actores: Usuario, Proveedor de servicios
 - Nivel: Usuario
 - Disparador: El usuario desea agendar una cita para un servicio.
@@ -156,7 +156,7 @@ un mensaje informando al usuario y sugiere opciones cercanas o similares.
 1. El sistema muestra la disponibilidad del proveedor.
 1. El usuario elige una fecha y hora disponibles y confirma la cita.
 1. El proveedor recibe una notificación de la nueva cita.
-1. El usuario puede modificar o cancelar la cita desde su perfil.
+1. El usuario puede cancelar la cita desde su perfil.
 
 ### Flujos Alternos y Excepciones
 
@@ -414,7 +414,7 @@ cita.
 
 ## 6. Búsqueda Avanzada
 
-**Descripción:** Como usuario, quiero utilizar un motor de búsqueda avanzado para encontrar servicios específicos basados en ubicación, tipo de servicio y calificaciones.
+**Descripción:** Como usuario, quiero utilizar un motor de búsqueda avanzado para encontrar servicios específicos basados en nombre del servicio y calificaciones.
 
 **Criterios de Aceptación:**
 
@@ -428,12 +428,12 @@ cita.
 
 ## 7. Sistema de Reservas
 
-**Descripción:** Como usuario, quiero agendar, modificar y cancelar servicios.
+**Descripción:** Como usuario, quiero agendar y cancelar servicios.
 
 **Criterios de Aceptación:**
 
 - El usuario puede ver un calendario con sus servicios programados.
-- El usuario puede modificar o cancelar servicios con confirmación del proveedor.
+- El usuario puede cancelar servicios con confirmación del proveedor.
 - El usuario recibe notificaciones de confirmación de cambios o cancelaciones.
 
 **Puntos:** 8
@@ -513,7 +513,7 @@ cita.
 # Backlog
 
 1. **Motor de búsqueda avanzado:** Implementar un motor de búsqueda avanzado que permita a los usuarios encontrar servicios específicos basados en ubicación, tipo de servicio y calificaciones.
-2. **Sistema de reservas:** Desarrollar una herramienta para agendar, modificar y cancelar citas.
+2. **Sistema de reservas:** Desarrollar una herramienta para agendar y cancelar citas.
 3. **Sistema de pagos:** Integrar múltiples opciones de pago seguro, incluyendo tarjetas de crédito, transferencias bancarias y otros métodos de pago electrónicos.
 4. **Funcionalidad de reseñas y calificaciones:** Permitir a los usuarios dejar comentarios y calificaciones sobre los servicios recibidos.
 5. **Soporte al cliente:** Implementar un canal de soporte para resolver problemas o consultas tanto de usuarios como de proveedores.
