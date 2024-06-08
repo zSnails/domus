@@ -1,0 +1,16 @@
+author: Aaron González, Anthony Jimenez, Daniel Porras
+lang: es
+title: "Proyecto #3: Domus"
+toc: true
+documentclass: apa7
+classoption: 
+  - stu
+header-includes: |
+  \shorttitle{Domus}
+  \course{Requerimientos de Software}
+  \affiliation{ITCR}
+  \duedate{\today}
+  \professor{Marvin Mendez}
+
+nocite: |
+  @*

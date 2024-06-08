@@ -1,0 +1,56 @@
+@startuml
+
+skinparam linetype ortho
+
+entity Usuario {
+    nombre
+    email
+    contrasena
+}
+
+entity Proveedor {
+    nombre
+    email
+    contrasena
+    certificaciones
+    verificado
+}
+
+entity Servicio {
+    nombre
+    descripcion
+    precio
+}
+entity Reserva {
+    fecha
+    notas
+    confirmada
+}
+entity Pago {
+    monto
+    fecha
+    metodo
+}
+entity Resena {
+    calificacion
+    comentario
+    fecha
+}
+entity Soporte {
+    tipo
+    descripcion
+    fecha
+    estado
+}
+
+    Usuario ||--o{ Reserva : hace
+    Usuario ||--o{ Resena : escribe
+    Usuario ||--o{ Soporte : solicita
+    Proveedor ||--o{ Servicio : ofrece
+    Proveedor ||--o{ Reserva : confirma
+    Servicio ||--o{ Resena : tiene
+    Servicio ||--o{ Reserva : esParteDe
+    Reserva ||--o{ Pago : genera
+    Resena ||--o{ Soporte : tieneProblemaCon
+
+@enduml
