@@ -28,29 +28,35 @@ const providers = [
     {
         name: "John's Plumbing",
         description: "Experienced plumber serving the local community.",
-        reviews: "4 (200 reviews)",
+        totalReviews: 200,
+        rating: 4,
     },
     {
         name: "Sarah's Landscaping",
         description: "Lawn care and gardening services.",
         reviews: "5 (140 reviews)",
+        totalReviews: 140,
+        rating: 5,
     },
     {
         name: "Bob's Handyman Services",
         description: "Skilled handyman for all your home repairs.",
-        reviews: "4 (160 reviews)",
+        totalReviews: 160,
+        rating: 4,
     },
     {
         name: "Jane's Cleaning Services",
         description: "Reliable and thorough house cleaning.",
-        reviews: "5 (180 reviews)",
+        totalReviews: 180,
+        rating: 5,
     }
 ];
 
 export default function Page() {
     const searchParams = useSearchParams();
     let query = searchParams.get("q");
-    const filtered = providers.filter(p => p.name.toLowerCase().includes(query?.toLowerCase() ?? ""));
+    let rating = searchParams.get("s");
+    const filtered = providers.filter(p => p.name.toLowerCase().includes(query?.toLowerCase() ?? "")).filter(p => rating === "0" || p.rating.toString() == rating);
 
     const router = useRouter();
 
@@ -78,7 +84,7 @@ export default function Page() {
                                     <p className="text-gray-600 mb-4">{provider.description}</p>
                                     <div className="flex items-center space-x-2">
                                         <StarIcon className="w-5 h-5 fill-yellow-500" />
-                                        <span className="text-gray-600">{provider.reviews}</span>
+                                        <span className="text-gray-600">{provider.rating} ({provider.totalReviews} reviews)</span>
                                     </div>
                                     <Button className="mt-4 w-full" variant="outline" onClick={gotoDetails}>
                                         View Details
