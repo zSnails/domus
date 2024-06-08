@@ -55,6 +55,13 @@ export default function ClientLayout({
       <main className="flex-1">
         <NextUIProvider>{children}</NextUIProvider>
       </main>
+      {isChatOpen ? (
+        <MiniChat onClose={toggleChat} />
+      ) : (
+        <button className="chat-button" onClick={toggleChat}>
+          💬
+        </button>
+      )}
     </div>
   );
 }
