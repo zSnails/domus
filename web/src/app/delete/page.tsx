@@ -74,7 +74,7 @@ export default function Page() {
   return (
     <section className="py-12 md:py-20">
       <div className="container mx-auto px-6 md:px-10">
-        <h2 className="text-2xl md:text-3xl font-bold mb-8">Search Results</h2>
+        <h2 className="text-2xl md:text-3xl font-bold mb-8">Scheduled Services</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
           {getProviders.map((provider, index) => (
             <Card key={provider.name}>
@@ -117,9 +117,9 @@ export default function Page() {
                     size="sm"
                   >
                     <ModalContent  className="bg-white rounded-xl">
-                      <ModalHeader>Delete Provider</ModalHeader>
+                      <ModalHeader>Cancel Service</ModalHeader>
                       <ModalBody>
-                        <p>Are you sure you want to delete this provider?</p>
+                        <p>Are you sure you want to cancel this service?</p>
                       </ModalBody>
                       <ModalFooter>
                         <Button className="mr-2 bg-red-500"
