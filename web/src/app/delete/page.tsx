@@ -3,6 +3,14 @@ import { Button } from "@/components/ui/button";
 import { CardContent, Card } from "@/components/ui/card";
 import { useRouter } from "next/navigation";
 import { ReactElement, useState } from "react";
+import {
+  Modal,
+  ModalContent,
+  ModalHeader,
+  ModalBody,
+  ModalFooter,
+  useDisclosure,
+} from "@nextui-org/react";
 
 function StarIcon(props: any): ReactElement<any, any> {
   return (
@@ -48,6 +56,7 @@ export default function Page() {
   ];
 
   const [getProviders, setProviders] = useState(providers);
+  const { isOpen, onOpen, onOpenChange } = useDisclosure();
 
   const router = useRouter();
 
@@ -57,9 +66,9 @@ export default function Page() {
 
   function deleteProvider(index: number) {
     console.log("Deleting provider");
+
     const newProviders = getProviders.filter((_, i) => i !== index);
     setProviders(newProviders);
-
   }
 
   return (
@@ -96,10 +105,35 @@ export default function Page() {
                   <Button
                     className="mt-4 w-full bg-red-500 text-gray-100"
                     variant="outline"
-                    onClick={() => deleteProvider(index)}
+                    onClick={onOpen}
                   >
                     Delete
                   </Button>
+                  <Modal
+                    isOpen={isOpen}
+                    onOpenChange={onOpenChange}
+                    backdrop="opaque"
+                    isDismissable = {false}
+                    size="sm"
+                  >
+                    <ModalContent  className="bg-white rounded-xl">
+                      <ModalHeader>Delete Provider</ModalHeader>
+                      <ModalBody>
+                        <p>Are you sure you want to delete this provider?</p>
+                      </ModalBody>
+                      <ModalFooter>
+                        <Button className="mr-2 bg-red-500"
+                          onClick={() => {
+                            deleteProvider(index);
+                            onOpenChange();
+                          }}
+                        >
+                          Yes
+                        </Button>
+                        <Button variant="outline" onClick={onOpenChange}>No</Button>
+                      </ModalFooter>
+                    </ModalContent>
+                  </Modal>
                 </div>
               </CardContent>
             </Card>
