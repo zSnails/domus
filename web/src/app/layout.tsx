@@ -28,15 +28,17 @@ export default function RootLayout({
                 Home Services Platform
               </Link>
               <nav className="hidden md:flex items-center space-x-6">
-                {/*<Link className="hover:underline" href="">
-                                    Services
-                                </Link>
+                <Link className="hover:underline" href="/delete">
+                  My Services
+                </Link>
+                {/*
                                 <Link className="hover:underline" href="#foo">
                                     About
                                 </Link>
                                 <Link className="hover:underline" href="#">
                                     Contact
-                                </Link>*/}
+                                </Link>
+                                */}
               </nav>
               <div className="flex items-center space-x-4">
                 <Button

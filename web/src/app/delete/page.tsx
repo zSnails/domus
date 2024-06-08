@@ -112,7 +112,7 @@ export default function Page() {
                   <Modal
                     isOpen={isOpen}
                     onOpenChange={onOpenChange}
-                    backdrop="opaque"
+                    backdrop="transparent"
                     isDismissable = {false}
                     size="sm"
                   >
