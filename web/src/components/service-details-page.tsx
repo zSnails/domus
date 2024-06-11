@@ -104,6 +104,13 @@ export function ServiceDetailsPage() {
                               name="cvc"
                               variant="underlined"
                             />
+                            <Input
+                              className="mb-8"
+                              label="Aditional notes (Optional)"
+                              type="text"
+                              name="amount"
+                              variant="faded"
+                            />
                           </form>
                         </ModalBody>
                         <ModalFooter>
