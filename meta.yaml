@@ -2,6 +2,7 @@ author: Aaron González, Anthony Jimenez, Daniel Porras
 lang: es
 title: "Proyecto #3: Domus"
 toc: true
+lof: true
 documentclass: apa7
 classoption: 
   - stu

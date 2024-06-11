@@ -1,0 +1,17 @@
+@startuml
+
+title "Pago Seguro"
+
+|Cliente|
+start
+:Iniciar pago seguro en plataforma;
+|Servidor|
+:Verificar método de pago;
+:Procesar pago;
+:Confirmar pago al cliente;
+|Cliente|
+:Recibir confirmación de pago;
+stop
+
+
+@enduml

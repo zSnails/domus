@@ -1,0 +1,16 @@
+@startuml
+
+title "Dejar una reseña"
+
+|Cliente|
+start
+:Recibir servicio de limpieza;
+:Dejar una reseña y calificación;
+|Servidor|
+:Guardar reseña en la base de datos;
+:Actualizar calificación del proveedor;
+|Cliente|
+:Recibir confirmación de reseña;
+stop
+
+@enduml

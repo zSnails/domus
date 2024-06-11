@@ -1,0 +1,21 @@
+@startuml
+
+title "Búsqueda y Contratación"
+
+|Usuario|
+start
+:Buscar servicios de jardinería;
+:Revisar reseñas;
+:Comparar precios;
+:Seleccionar Proveedor;
+:Agendar Cita;
+|Servidor|
+:Procesar pago;
+:Notificar al proveedor;
+:Confirmar cita al usuario;
+|Usuario|
+:Recibir confirmación;
+stop
+
+
+@enduml

@@ -1,0 +1,16 @@
+@startuml
+
+title "Gestión de citas"
+
+|Proveedor|
+start
+:Recibir notificación de cita programada;
+:Ver detalles de la cita;
+|Servidor|
+:Enviar notificación de cambio/cancelación;
+:Actualizar estado de la cita;
+|Proveedor|
+:Recibir confirmación de actualización;
+stop
+
+@enduml

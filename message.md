@@ -4,34 +4,40 @@
 
 ## Problemas a Resolver
 
-1. **Falta de confianza en los proveedores:** Los clientes desconfían de la calidad y seguridad de los servicios ofrecidos.
-2. **Dificultad para encontrar servicios confiables:** El mercado está fragmentado y es difícil localizar profesionales confiables.
-3. **Gestión ineficiente de citas y horarios:** La coordinación y programación de servicios es ineficiente, lo que puede llevar a cancelaciones o demoras.
-4. **Falta de transparencia en precios y servicios:** Los clientes desconocen los costos y detalles específicos de los servicios.
-5. **Falta de feedback y reseñas:** Los usuarios no tienen suficiente información sobre experiencias previas con los proveedores.
-6. **Proceso de pago inseguro o complicado:** La falta de un sistema de pago seguro y conveniente puede desalentar a los clientes.
-
-<!-- //## Dudas sobre el Dominio -->
-<!-- 1. ¿Qué regulación o licencias se requieren para los proveedores de servicios en diferentes áreas geográficas? -->
-<!-- 2. ¿Qué tipo de seguro o garantía deben ofrecer los proveedores de servicios? -->
-<!-- 3. ¿Cuáles son las expectativas de los clientes en términos de tiempo de respuesta y disponibilidad? -->
-<!-- 4. ¿Qué nivel de verificación de antecedentes es necesario para los proveedores? -->
-<!-- 5. ¿Qué plataformas similares existen y qué servicios ofrecen? -->
+1. **Falta de confianza en los proveedores:** Los clientes desconfían de la calidad y
+   seguridad de los servicios ofrecidos.
+1. **Dificultad para encontrar servicios confiables:** El mercado está fragmentado y
+   es difícil localizar profesionales confiables.
+1. **Gestión ineficiente de citas y horarios:** La coordinación y programación de
+   servicios es ineficiente, lo que puede llevar a cancelaciones o demoras.
+1. **Falta de transparencia en precios y servicios:** Los clientes desconocen los
+   costos y detalles específicos de los servicios.
+1. **Falta de feedback y reseñas:** Los usuarios no tienen suficiente información
+   sobre experiencias previas con los proveedores.
+1. **Proceso de pago inseguro o complicado:** La falta de un sistema de pago seguro y
+   conveniente puede desalentar a los clientes.
 
 ## Orientación de la Solución
 
-1. **Desarrollo de una plataforma confiable:** Crear una aplicación o sitio web donde los proveedores de servicios puedan registrarse y los clientes puedan encontrar y contratar servicios fácilmente.
-2. **Verificación y certificación:** Implementar un sistema de verificación y certificación para asegurar calidad y confianza en los proveedores.
-3. **Sistema de reseñas y calificaciones:** Permitir a los usuarios dejar reseñas y calificaciones para fomentar la transparencia.
-4. **Integración de pagos seguros:** Ofrecer opciones de pago seguras y diversas para facilitar las transacciones.
-5. **Gestión de citas:** Incluir funciones para agendar, y recordar citas.
+1. **Desarrollo de una plataforma online:** Crear una aplicación web donde
+   los proveedores de servicios puedan registrarse y los clientes puedan encontrar y
+   contratar servicios.
+1. **Verificación y certificación:** Implementar un sistema de verificación y
+   certificación para asegurar calidad y confianza en los proveedores.
+1. **Sistema de reseñas y calificaciones:** Permitir a los usuarios dejar reseñas y
+   calificaciones para fomentar la transparencia.
+1. **Integración de pagos seguros:** Ofrecer opciones de pago seguras y diversas para
+   facilitar las transacciones.
+1. **Gestión de citas:** Incluir funciones para agendar, y recordar citas.
 
 ## Alcance de la Solución
 
-1. **Usuarios:** Hogares y residentes en busca de servicios de mantenimiento y reparaciones.
-2. **Proveedores:** Profesionales y empresas ofreciendo servicios de jardinería, plomería, limpieza, etc.
-3. **Geografía:** Iniciar en una ciudad o región específica con planes de expansión.
-4. **Plataformas:** Aplicación web.
+1. **Usuarios:** Hogares y residentes en busca de servicios de mantenimiento y
+   reparaciones.
+1. **Proveedores:** Profesionales y empresas ofreciendo servicios de jardinería,
+   plomería, limpieza, etc.
+1. **Geografía:** Iniciar en una ciudad o región específica con planes de expansión.
+1. **Plataformas:** Aplicación web.
 
 # Requerimientos
 
@@ -39,8 +45,8 @@
 
 ### Sistema de búsqueda
 
-Motor de búsqueda para encontrar servicios específicos basados en nombre y
-calificaciones.
+Motor de búsqueda para encontrar servicios específicos basados en nombre del servicio
+y calificaciones.
 
 ### Sistema de reservas
 
@@ -90,10 +96,9 @@ de carga y estrés cada mes para asegurar el cumplimiento de estos requisitos.
 
 ### Disponibilidad
 
-El sistema estará disponible durante las horas de operación del salón de belleza (7
-días a la semana, de 9:00 AM a 9:00 PM). El tiempo de inactividad planificado para
-mantenimiento y actualizaciones no excederá las 4 horas mensuales y será programado
-fuera de las horas de operación.
+El sistema estará disponible durante las 24 horas del día. El tiempo de inactividad
+planificado para mantenimiento y actualizaciones no excederá las 4 horas mensuales y
+será programado fuera de las horas de operación.
 
 ### Seguridad
 
@@ -103,9 +108,9 @@ autenticación basada en usuario y contraseña.
 
 ### Escalabilidad
 
-El sistema crecerá y se adaptará fácilmente a medida que el negocio del salón de
-belleza se expanda, sin comprometer el rendimiento o la funcionalidad. Se utilizarán
-bases de datos distribuidas para lograrlo.
+El sistema crecerá y se adaptará a medida que la clientela crezca, sin comprometer el
+rendimiento o la funcionalidad. Se utilizarán bases de datos distribuidas para
+lograrlo.
 
 ### Compatibilidad
 
@@ -121,8 +126,8 @@ revisiones de código y documentación detallada.
 
 ## Búsqueda de Servicios
 
-- Resumen: Permitir a los usuarios encontrar servicios específicos basados en
-ubicación, tipo de servicio y calificaciones.
+- Resumen: Permitir a los usuarios encontrar servicios específicos basados en nombre
+  del servicio y calificaciones.
 - Actores: Usuario
 - Nivel: Usuario
 - Disparador: El usuario desea encontrar un servicio específico.
@@ -131,10 +136,10 @@ ubicación, tipo de servicio y calificaciones.
 ### Flujo Normal
 
 1. El usuario accede a la plataforma y selecciona la opción de búsqueda.
-1. El usuario ingresa los criterios de búsqueda (ubicación, tipo de servicio,
-calificaciones).
+1. El usuario ingresa los criterios de búsqueda (nombre del servicio,
+   calificaciones).
 1. El sistema muestra una lista de proveedores que coinciden con los criterios
-ingresados.
+   ingresados.
 1. El usuario revisa los resultados y selecciona un proveedor.
 
 ### Flujos Alternos y Excepciones
@@ -242,45 +247,46 @@ con un método diferente.
 - Si el proveedor es rechazado, el sistema informa al proveedor con las razones y
   posibles acciones para corregir la situación.
 
-## Registro de Proveedor
+<!-- ## Registro de Proveedor -->
 
-- Resumen: Permitir a los proveedores de servicios registrarse en la plataforma proporcionando sus datos personales, certificaciones y detalles del servicio que ofrecen.
-- Actores: Proveedor de servicios
-- Nivel: Usuario
-- Disparador: Un proveedor desea ofrecer sus servicios a través de la plataforma.
-- Precondiciones: El proveedor debe tener acceso a internet y a los documentos necesarios para el registro.
+<!-- - Resumen: Permitir a los proveedores de servicios registrarse en la plataforma proporcionando sus datos personales, certificaciones y detalles del servicio que ofrecen. -->
+<!-- - Actores: Proveedor de servicios -->
+<!-- - Nivel: Usuario -->
+<!-- - Disparador: Un proveedor desea ofrecer sus servicios a través de la plataforma. -->
+<!-- - Precondiciones: El proveedor debe tener acceso a internet y a los documentos necesarios para el registro. -->
 
-### Flujo Normal
+<!-- ### Flujo Normal -->
 
-1. El proveedor accede a la plataforma y selecciona la opción de registro.
-1. El proveedor ingresa sus datos personales, certificaciones y detalles del servicio ofrecido.
-1. El proveedor envía la información para verificación.
-1. El sistema notifica al proveedor que su registro está en proceso de verificación.
+<!-- 1. El proveedor accede a la plataforma y selecciona la opción de registro. -->
+<!-- 1. El proveedor ingresa sus datos personales, certificaciones y detalles del servicio ofrecido. -->
+<!-- 1. El proveedor envía la información para verificación. -->
+<!-- 1. El sistema notifica al proveedor que su registro está en proceso de verificación. -->
 
-### Flujos Alternos y Excepciones
+<!-- ### Flujos Alternos y Excepciones -->
 
-- Si el proveedor no completa todos los campos requeridos, el sistema muestra un
-  mensaje de error indicando los campos faltantes.
+<!-- - Si el proveedor no completa todos los campos requeridos, el sistema muestra un -->
+<!--   mensaje de error indicando los campos faltantes. -->
 
-## Creación y Edición de Perfil de Proveedor
+<!-- ## Creación y Edición de Perfil de Proveedor -->
 
-- Resumen: Permitir a los proveedores crear y editar su perfil, incluyendo fotos, descripciones, precios y disponibilidad.
-- Actores: Proveedor de servicios
-- Nivel: Usuario
-- Disparador: Un proveedor desea actualizar su información en la plataforma.
-- Precondiciones: El proveedor debe estar registrado y verificado en la plataforma.
+<!-- - Resumen: Permitir a los proveedores crear y editar su perfil, esto permite agregar: -->
+<!--   fotos, descripciones, precios y disponibilidad. -->
+<!-- - Actores: Proveedor de servicios -->
+<!-- - Nivel: Usuario -->
+<!-- - Disparador: Un proveedor desea actualizar su información en la plataforma. -->
+<!-- - Precondiciones: El proveedor debe estar registrado y verificado en la plataforma. -->
 
-### Flujo Normal
+<!-- ### Flujo Normal -->
 
-1. El proveedor accede a su cuenta y selecciona la opción para editar el perfil.
-1. El proveedor actualiza sus fotos, descripciones, precios y disponibilidad.
-1. El proveedor guarda los cambios.
-1. El sistema actualiza el perfil del proveedor con la nueva información.
+<!-- 1. El proveedor accede a su cuenta y selecciona la opción para editar el perfil. -->
+<!-- 1. El proveedor actualiza sus fotos, descripciones, precios y disponibilidad. -->
+<!-- 1. El proveedor guarda los cambios. -->
+<!-- 1. El sistema actualiza el perfil del proveedor con la nueva información. -->
 
-### Flujos Alternos y Excepciones
+<!-- ### Flujos Alternos y Excepciones -->
 
-- Si el proveedor intenta ingresar información inválida (e.g., precios negativos), el
-  sistema muestra un mensaje de error y no guarda los cambios.
+<!-- - Si el proveedor intenta ingresar información inválida (e.g., precios negativos), el -->
+<!--   sistema muestra un mensaje de error y no guarda los cambios. -->
 
 ## Confirmación de Servicio
 
@@ -313,7 +319,8 @@ con un método diferente.
 ### Flujo Normal
 
 1. El usuario accede a su perfil y selecciona la opción de historial de servicios.
-1. El sistema muestra una lista de los servicios contratados por el usuario, incluyendo fechas, proveedores, y calificaciones.
+1. El sistema muestra una lista de los servicios contratados por el usuario, estos
+   servicios incluyen específicamente: proveedores y calificaciones.
 1. El usuario selecciona un servicio específico para ver más detalles.
 1. El sistema muestra los detalles completos del servicio seleccionado.
 
@@ -358,15 +365,16 @@ cita.
 **Criterios de Aceptación:**
 
 - El usuario puede ingresar palabras clave para buscar servicios.
-- Los resultados de búsqueda muestran nombres de servicios, descripciones, precios y calificaciones.
-- El usuario puede filtrar resultados por ubicación, tipo de servicio y calificaciones.
+- Los resultados de búsqueda muestran nombres de servicios, descripciones, precios y
+  calificaciones.
+- El usuario puede filtrar resultados por nombre del servicio y calificaciones.
 - La búsqueda debe ser rápida[^manera-rapida] y mostrar resultados relevantes.
 
 **Puntos:** 8
 
 ## 2. Contratación de Servicios
 
-**Descripción:** Como usuario, quiero contratar un servicio de hogar para agendar una cita de manera fácil y conveniente.
+**Descripción:** Como usuario, quiero contratar un servicio de hogar para agendar una cita.
 
 **Criterios de Aceptación:**
 
@@ -412,15 +420,15 @@ cita.
 
 **Puntos:** 3
 
-## 6. Búsqueda Avanzada
+## 6. Búsqueda de Servicios
 
-**Descripción:** Como usuario, quiero utilizar un motor de búsqueda avanzado para encontrar servicios específicos basados en nombre del servicio y calificaciones.
+**Descripción:** Como usuario, quiero utilizar un motor de búsqueda para encontrar servicios específicos basados en nombre del servicio y calificaciones.
 
 **Criterios de Aceptación:**
 
 - El usuario puede aplicar múltiples filtros en la búsqueda.
 - Los resultados de la búsqueda se obtienen de manera rápida[^manera-rapida].
-- La búsqueda avanzada permite guardar filtros para futuras búsquedas.
+- La búsqueda permite guardar filtros para futuras búsquedas.
 
 [^manera-rapida]: Menor a 2 segundos.
 
@@ -482,7 +490,6 @@ cita.
 
 - Los proveedores pueden subir documentos de certificación para verificación.
 - El administrador revisa y aprueba o rechaza las certificaciones.
-- Los proveedores certificados son marcados como "Verificados" en la plataforma.
 
 **Puntos:** 8
 
@@ -492,9 +499,12 @@ cita.
 
 **Criterios de Aceptación:**
 
-- El sistema envía automáticamente un correo electrónico de confirmación al usuario cuando agende una nueva cita.
-- Se envía un correo electrónico al usuario cuando se realicen modificaciones o cancelaciones en una cita existente.
-- El correo electrónico de confirmación incluye detalles de la cita, como la fecha, hora y tipo de servicio.
+- El sistema envía automáticamente un correo electrónico de confirmación al usuario
+  cuando agende una nueva cita.
+- Se envía un correo electrónico al usuario cuando se realicen modificaciones o
+  cancelaciones en una cita existente.
+- El correo electrónico de confirmación incluye los siguientes detalles de la cita:
+  la fecha, hora y tipo de servicio.
 
 **Puntos:** 5
 
@@ -512,15 +522,24 @@ cita.
 
 # Backlog
 
-1. **Motor de búsqueda avanzado:** Implementar un motor de búsqueda avanzado que permita a los usuarios encontrar servicios específicos basados en ubicación, tipo de servicio y calificaciones.
-2. **Sistema de reservas:** Desarrollar una herramienta para agendar y cancelar citas.
-3. **Sistema de pagos:** Integrar múltiples opciones de pago seguro, incluyendo tarjetas de crédito, transferencias bancarias y otros métodos de pago electrónicos.
-4. **Funcionalidad de reseñas y calificaciones:** Permitir a los usuarios dejar comentarios y calificaciones sobre los servicios recibidos.
-5. **Soporte al cliente:** Implementar un canal de soporte para resolver problemas o consultas tanto de usuarios como de proveedores.
-6. **Verificación y certificación de proveedores:** Establecer un proceso para verificar certificaciones de los proveedores.
-7. **Confirmación de Citas por Correo Electrónico:** Enviar correos electrónicos de confirmación para nuevas citas, modificaciones y cancelaciones.
-8. **Campo de Notas en Reservas:** Añadir un campo de notas en las reservas para que los usuarios puedan agregar información adicional o instrucciones para el proveedor.
-9. **Calificación Rápida:** Permitir a los usuarios calificar un servicio rápidamente después de completarlo sin necesidad de escribir una reseña completa.
+1. **Motor de búsqueda:** Implementar un motor de búsqueda que permita a los usuarios
+   encontrar servicios específicos basados en nombre del servicio y calificaciones.
+1. **Sistema de reservas:** Desarrollar una herramienta para agendar y cancelar
+   citas.
+1. **Sistema de pagos:** Integrar una opción de pago seguro mediante tarjeta de crédito.
+1. **Funcionalidad de reseñas y calificaciones:** Permitir a los usuarios dejar
+   comentarios y calificaciones sobre los servicios recibidos.
+1. **Soporte al cliente:** Implementar un canal de soporte para resolver problemas o
+   consultas tanto de usuarios como de proveedores.
+1. **Verificación y certificación de proveedores:** Establecer un proceso para
+   verificar certificaciones de los proveedores.
+1. **Confirmación de Citas por Correo Electrónico:** Enviar correos electrónicos de
+   confirmación para nuevas citas, modificaciones y cancelaciones.
+1. **Campo de Notas en Reservas:** Añadir un campo de notas en las reservas para que
+   los usuarios puedan agregar información adicional o instrucciones para el
+   proveedor.
+1. **Calificación Rápida:** Permitir a los usuarios calificar un servicio rápidamente
+   después de completarlo sin necesidad de escribir una reseña completa.
 
 \newpage
 
@@ -528,7 +547,7 @@ cita.
 
 | ID  | Requerimiento                    | Backlog                                      | Historias de Usuario |
 | --- | -------------------------------- | -------------------------------------------- | -------------------- |
-| R1  | Búsqueda avanzada                | Motor de búsqueda avanzado                   | H1, H6               |
+| R1  | Búsqueda                         | Motor de búsqueda                            | H1, H6               |
 | R2  | Sistema de reservas              | Sistema de reservas                          | H2, H3, H7           |
 | R3  | Sistema de pagos                 | Sistema de pagos                             | H4, H8               |
 | R4  | Reseñas                          | Funcionalidad de reseñas y calificaciones    | H5, H9               |
@@ -539,31 +558,39 @@ cita.
 | R9  | Calificación Rápida              | Calificación Rápida                          | H5, H9               |
 
 
-![Caso de uso #1](./diagrams/Caso1.svg)
+![Caso de Uso: Búsqueda de Servicios](./diagrams/Caso1.svg)
 
-![Caso de uso #2](./diagrams/Caso2.svg)
+![Caso de Uso: Sistema de Reservas](./diagrams/Caso2.svg)
 
-![Caso de uso #3](./diagrams/Caso3.svg)
+![Caso de Uso: Sistema de Pagos](./diagrams/Caso3.svg)
 
-![Caso de uso #4](./diagrams/Caso4.svg)
+![Caso de Uso: Dejar Reseña y Calificación](./diagrams/Caso4.svg)
 
-![Caso de uso #5](./diagrams/Caso5.svg)
+![Caso de Uso: Soporte al Cliente](./diagrams/Caso5.svg)
 
-![Caso de uso #6](./diagrams/Caso6.svg)
+![Caso de Uso: Verificación y Certificación de Proveedores](./diagrams/Caso6.svg)
 
-![Caso de uso #7](./diagrams/Caso7.svg)
+<!-- ![Caso de uso #7](./diagrams/Caso7.svg) -->
 
-![Caso de uso #8](./diagrams/Caso8.svg)
+<!-- ![Caso de Uso: Creación y Edición del Perfil del Proveedor](./diagrams/Caso8.svg) -->
 
-![Caso de uso #9](./diagrams/Caso9.svg)
+![Caso de Uso: Confirmación de Servicio](./diagrams/Caso9.svg)
 
-![Caso de uso #10](./diagrams/Caso10.svg)
+![Caso de Uso: Visualización de Historial de Servicios](./diagrams/Caso10.svg)
 
-![Caso de uso #11](./diagrams/Caso11.svg)
+![Caso de Uso: Adición de Notas en Reserva](./diagrams/Caso11.svg)
 
 ![Diagrama de Empatía](./diagrams/empathy.png)
 
 ![Modelo Conceptual](./diagrams/conceptual.svg)
+
+![Búsqueda y Contratación](./diagrams/busquedaycontratacion.svg)
+
+![Gestión de citas](./diagrams/gestiondecitas.svg)
+
+![Pago Seguro](./diagrams/pagoseguro.svg)
+
+![Dejar una reseña](./diagrams/dejarresena.svg)
 
 \newpage
 
